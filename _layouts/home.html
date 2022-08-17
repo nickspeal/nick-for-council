@@ -5,51 +5,134 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
 {% include head.html %}
-
 <body>
+    <div id="wrapper">
+        <header id="header" class="alt">
+            <a href="#" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+        </header>
 
-    {% include header.html %}
-
-    <!-- Banner -->
-    <section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-            </header>
-            <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main -->
-    <div id="main">
-
-        <!-- One -->
-        {% include tiles.html %}
-
-        <!-- Two -->
-        <section id="two">
+        <!-- Banner -->
+        <section id="banner" class="major">
             <div class="inner">
                 <header class="major">
-                    <h2>Massa libero</h2>
+                    <h2 >Availability, Affordability, and Sustainability</h2>
                 </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="landing.html" class="button next">Get Started</a></li>
-                </ul>
+                <div class="content">
+                    <p>of <a href="#housing">Housing</a>, <a href="#transportation">Transportation</a>, and <a href="#utilities">Utilities</a> in South Lake Tahoe</p>
+                </div>
             </div>
         </section>
 
+        <!-- Main -->
+        <div id="main">
+
+        <!-- One -->
+        <section id="housing">
+            <div class="inner">
+                <header class="major">
+                    <h2>Housing</h2>
+                </header>
+                <p>
+                Anybody renting a home lives in fear of losing it and not being able to find another. Kids grow up and move out and don't want to leave the community. <a target="_blank" rel="noopener noreferrer" href="https://www.cityofslt.us/DocumentCenter/View/17094" title="South Lake Tahoe General Plan, Housing Element, Section 4.2.2.1, Page 27">Over 5000 people</a> commute into work from outside of the basin. Anyobdy who wants to live in South Lake Tahoe should be able to find affordable, well-maintained housing.
+                </p>
+                <p>
+                We have more houses than people in Tahoe. But a lot of them aren't being used as homes. On Council, I will expand expand incentives to homeowners to rent vacant units and turn them into long term housing.
+                </p>
+                <p>
+                We can also build more of the housing that enables people to live here sustainably and affordably. We can follow in the tracks of Sugar Pine Village to leverage state funding for hundreds of units of deed-restricted affordable housing specifically for income-qualifying tenants, walking distance to transit, jobs, and ammenities. And we can cut the red tape to make this easier.
+                </p>
+                <p>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.cityofslt.us/DocumentCenter/View/17094" title="South Lake Tahoe General Plan, Housing Element, Section 4.2.4.1, Table 4-17">80% of the homes</a> in South Lake Tahoe were built before 1980. 1% were built in the past 10 years. This moratorium on development has benefited lake clarity, but new technology and building standards present an environmental imperative to update our old buildings for energy efficiency.
+                </p>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="transportation" class="spotlights">
+            <section>
+                <span class="image">
+                    <img src="{% link assets/images/nick-sit-with-bike.jpg %}" alt="" data-position="center center" />
+                </span>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Transportation</h3>
+                        </header>
+                        <p>
+                        Everybody has had enough of traffic and potholes and walking in the gutter in the side of the street. But what do we expect when <a target="_blank" rel="noopener noreferrer" href="https://www.trpa.gov/rtp/" title="TRPA Regional Transportation Plan 2020, Chapter 3, Page 40">96% of trips</a> into the basin come by car? By providing other options, we can reduce traffic, road wear, emissions, and collisions. As a board member of the <a target="_blank" rel="noopener noreferrer" href="https://www.tahoebike.org/about">Lake Tahoe Bicycle Coalition</a>, I have long advocated for active transportation infrastructure, and have been so impressed with the City's progress in recent years. I will extend the Greenway path through Bijou to Ski Run, and work with public works on low-cost connectivity enhancements in every neighborhood.
+                        </p>
+                        <p>
+                        In 2020 the voters passed Measure S, increasing sales tax and <a target="_blank" rel="noopener noreferrer" href="https://www.cityofslt.us/ArchiveCenter/ViewFile/Item/133" title="City of South Lake Tahoe Budget 2020-2021, Page 20">quadrupling the funding</a> for road repair to $3 million per year. I am disappointed by a regressive tax structure, where folks with the lowest income end up spending the highest fraction of it on tax, but already we have seen this new funding smooth out Pioneer trail. I'll keep up the pace of road repair, taking the opportunity to dig once for complete streets. Underground electricity, broadband, and stormwater improvements can happen at the same time, and the utilities can split the cost. Repaving Tahoe Keys Blvd will be a first priority, along with adding sidewalks and bike lanes to get people out of the gutter on this frequently used route. I'll keep a keen eye out for other budget items that we can cut to reduce the tax rate again.
+                        </p>
+                        <p>
+                        I'll prioritize the transit improvements in TRPA's Regional Transportation Plan: Microtransit through neighborhoods, more frequent and night service along highway 50, and a new route up the west shore. I'll encourage Vail to run ski busses again and stop worrying about parking.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="utilities">
+                <span class="image">
+                    <img src="{% link assets/images/snow-sun.jpg %}" alt="" data-position="top center" />
+                </span>
+                <div class="content">
+                    <div class="inner">
+                        <header class="major">
+                            <h3>Utilities</h3>
+                        </header>
+                        <p>
+                        The City has ambitious emissions targets as we do our part to Protect Our Winters and build resiliance for a changing climate. We have committed to <a target="_blank" rel="noopener noreferrer" href="https://sierranevadaalliance.org/city-of-south-lake-tahoe-unanimously-adopts-ambitious-renewable-energy-resolution/">100% renewable electricity by 2030</a>. Our Climate Action Plan calls for a <a target="_blank" rel="noopener noreferrer" href="https://www.cityofslt.us/DocumentCenter/View/14916/SLT-CAP-FINAL" title="South Lake Tahoe Climate Action Plan, Section ES2">50% reduction</a> in greenhouse gas emissions in the same timeframe. With 7 years to go, our next City Council will be responsible for the implementation that gets us on track. We need major investment in clean power generation and battery storage for all of our current electricity needs plus enough for our cars and home heaters.
+                        </p>
+                        <p>
+                        As we shift from fossil fuels to electicity, we also need to invest in the redundancy and reliability of our grid. Undergrounding utilities will protect them from damage in the event of fires and snowstorms. Local generation and storage will provide backups against regional disruption. Government regulation will be necessary in order to keep utilities accountable to the needs of the people.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Three -->
+        <section id="support">
+            <div class="inner">
+                <header class="major">
+                    <h2>Support the Campaign</h2>
+                </header>
+                <p>
+                This is a grassroots campaign on behalf of my peers in the community who are working to build a more affordable and sustainable South Lake Tahoe. I can't do it alone. If the message you see here resonates with the sort of progress that you want to see for South Lake Tahoe, I'll need your support to get the word out.
+                </p>
+                <p>
+                The first thing I'm doing is creating an email list for supporters, or even potential supporters. This way you can follow what's going on in the campaign, and I can reach out to you with a message to pass on to your friends. Please enter your email below to sign up. You can unsubscribe at any time. Thank you!
+                </p>
+                <p>
+                In the future, I would appreciate anybody willing to volunteer some time to help me contact our neighbors and explain the vision. I also need to raise money in order to reach a large enough audience with advertising. When the time comes, I'll be asking for small donations from many people. Thank you in advance for this support.
+                </p>
+                <!-- Form -->
+                <form action="https://formspree.io/{{ site.email }}" method="POST">
+                    <div class="field first">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" name="_replyto" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="level">Level of Support</label>
+                        <select name="level of support" id="level">
+                            <option value="">--Please choose an option--</option>
+                            <option value="1">I'll spread the word</option>
+                            <option value="2">I'll vote</option>
+                            <option value="3">I'd like to learn more</option>
+                        </select>
+
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Sign Up" class="special" /></li>
+                    </ul>
+                </form>
+            </div>
+        </section>
     </div>
-
     {% include footer.html %}
-
 </body>
-
 </html>
